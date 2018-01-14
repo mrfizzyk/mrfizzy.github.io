@@ -1,0 +1,148 @@
+language:
+  prefix:
+  - '&8[&ePLAY2MC-CLANS&8] &7'
+  console:
+    playerneeded:
+    - Вы дожны быть игроком!
+  help:
+  - '&7&m&l           &r &9&lКЛАН &8[&f1&8/&f2&8] &7&m&l            '
+  - ''
+  - '&8&l> &7/clan create <КЛАН> &8- &9создать клан.'
+  - '&8&l> &7/clan delete &8- &9удалить ваш клан.'
+  - '&8&l> &7/clan leave &8- &9покинуть клан.'
+  - '&8&l> &7/clan base &8- &9телепорт на спавн клана.'
+  - '&8&l> &7/clan setbase &8- &9поставить место спавна клана.'
+  - '&8&l> &7/clan info <ИГРОК> &8- &9информация о клане игрока'
+  - '&8&l> &7/clan kick <ИГРОК> &8- &9выкинуть игрока'
+  - '&8&l> &7/clan member <ИГРОК> &8- &9посмотреть члена клана'
+  - ''
+  - '&7&m&l           &r &9&lКЛАН &8[&f1&8/&f2&8] &7&m&l            '
+  help2:
+  - '&7&m&l           &r &9&lКЛАН &8[&f2&8/&f2&8] &7&m&l            '
+  - ''
+  - '&8&l> &7/clan stats <КЛАН> &8- &9статистика клана'
+  - '&8&l> &7/clan promote <ИГРОК> &8- &9promote a clan member'
+  - '&8&l> &7/clan demote <ИГРОК> &8- &9demote a clan member'
+  - '&8&l> &7/clan invite <ИГРОК> &8- &9пригласить игрока в клан'
+  - '&8&l> &7/clan accept <КЛАН> &8- &9принять предложение вступить в клан'
+  - '&8&l> &7/clan deny <КЛАН> &8- &9отклонить предложение вступить в клан'
+  - '&8&l> &7/clan cancel &8- &9отклонить предложение'
+  - '&8&l> &7/clan chat <СООБЩЕНИЕ> &8- &9написать сообщение в чат клана'
+  - ''
+  - '&7&m&l           &r &9&lКЛАН &8[&f2&8/&f2&8] &7&m&l            '
+  clan:
+    clan:
+      member:
+      - '&7&m&l           &r &9&lСостав клана &7&m&l            '
+      - ''
+      - '&9&lКлан: &7%clan%'
+      - '&9&lОнлайн: &7%online%/10'
+      - ''
+      - '&c&lГлава: %owner%'
+      - '&5&lПомощник: %mods%'
+      - '&9&lСостав: %member%'
+      - ''
+      - '&7&m&l           &r &9&lСостав клана &7&m&l            '
+      stats:
+      - '&7&m&l           &r &9&lCLAN-Stats &7&m&l            '
+      - ''
+      - '&9&lКлан: &7%clan%'
+      - '&9&lУбийства: &7%kills%'
+      - '&9&lСмерти: &7%deaths%'
+      - '&9&lKDR: &7%kdr%'
+      - ''
+      - '&7&m&l           &r &9&lСТАТИСТИКА КЛАНА &7&m&l            '
+      top:
+        first:
+        - '&7&m&l           &r &9&lТОП 10 КЛАНОВ &7&m&l            '
+        - ''
+        middle:
+        - '&a&l%place%. place &8- &7%clan% &8- &b%kills% kills'
+        end:
+        - ''
+        - '&7&m&l           &r &9&lТОП 10 КЛАНОВ &7&m&l            '
+        failed:
+        - '&cЗагрузка...!'
+      alreadyExistClan:
+      - '&cТакого клана не существует!'
+      created:
+      - '&7Создание клана &9%clan% &7успешно!'
+      deleted:
+      - '&7Вы удалили клан &9%clan%!'
+      info:
+      - '&9%player%''s &7название клана &9%clan%'
+      homeNotExist:
+      - '&cУ вашего клана нет спавна!'
+      home:
+      - '&7Вы были телепортирована в ваш &9клановый дом!'
+      sethome:
+      - '&7You placed your &9clan-base point!'
+      lowRank:
+      - '&cВаш ранг низкий!'
+      join:
+      - '&7Игрок &9%player% &7вступил в &9клан!'
+      denyinvite:
+      - '&7Вы не приняли &9предложение вступить в  %clan%.'
+      denyinviteclan:
+      - '&7Игрок &9%player% &7не принял приглашение!'
+      noInvite:
+      - '&cВы не приглашены в клан %clan%!'
+      beInvited:
+      - '&7Игрок &9%player% &7был приглашен!!'
+      sendNoInvite:
+      - '&cНи один игрок не был приглашен!'
+      stopinvite:
+      - '&cПриглашение для %player% было отозвано!!'
+      stopinvitetarget:
+      - '&cКлан%clan% отозвал приглашение!'
+      playernotinclan:
+      - '&cИгрок не является членом вашего клана!'
+      clannotexist:
+      - '&cКлан не существует!'
+      maxLengh:
+      - '&cЭто имя клана слишком длинное (максимум 5 символов) !'
+      notValidChar:
+      - '&cЭтот символ не допускается!'
+      maxMemberReached:
+      - '&cЭтот клан достиг предела игроков!'
+      kicked:
+      - '&cВы были изгнаны из своего клана!'
+      kickedclan:
+      - '&cИгрок %player% был изгнан из клана!'
+      mustBeMember:
+      - '&cВы не можете покинуть клан, вы лидер! /clan delete'
+      leave:
+      - '&cThe player %player% left the clan!'
+    permissions:
+    - '&cУ вас нет прав для использования данной команды!'
+    reload:
+    - '&7Перезагрузка закончена.'
+    member:
+      hasHighestRank:
+      - '&cЭтот игрок уже имеет самый высокий ранг!'
+      hasLowestRank:
+      - '&cЭтот игрок уже имеет самый низкий ранг!'
+      rangupdate:
+      - '&9%player% &7был повышен до &9%rank%!'
+      notExistRank:
+      - '&cThere are the following ranks: СОСТАВ, ПОМОЩНИК, ГЛАВА'
+      sendToOtherPerson:
+      - '&cВы не можете напасть на себя'
+      isInClan:
+      - '&cВы уже в клане!'
+      isOtherInClan:
+      - '&cИгрок %player% уже находится в клане!'
+      isNotInClan:
+      - '&cВы не в клане!'
+    player:
+      isOffline:
+      - '&cИгрок %player% оффлайн!'
+      haveBeenInvited:
+      - '&7Ты был приглашен в &9клан %clan%'
+      - ' &8> &a/clan accept %clan% &8- &7Принять предложение'
+      - ' &8> &c/clan deny %clan% &8- &7Отклонить предложение'
+      isNotInClan:
+      - '&cИгрок %player% не состоит в клане!'
+      hasOtherInvite:
+      - '&cПриглашение уже отправлено!'
+      - '&cОтклонить предложение: /clan cancel'
